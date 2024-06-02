@@ -64,7 +64,7 @@
                 <div class="row">
                     <div>
                         <h3>Blog Makale Yorumları</h3>
-                        @foreach (var item in Model.Yorums.OrderByDescending(x=>x.YorumId).Where(x=>x.Onay==true))
+                        @foreach (var item in Model.Yorums.OrderByDescending(x => x.YorumId).Where(x => x.Onay == true))
                         {
                             <p>@item.AdSoyad - @item.Eposta</p>
                             <p>@item.İcerik</p>

@@ -1,7 +1,7 @@
 ﻿@using PagedList;
 @using PagedList.Mvc;
 @using KurumsalWeb.Helper;
-@*burda ıenumable kaldırıp Ipagedlist diyoruz ve yukarda olduğu gibi ekliyoruz elle*@ 
+@*burda ıenumable kaldırıp Ipagedlist diyoruz ve yukarda olduğu gibi ekliyoruz elle*@
 @model IPagedList<KurumsalWeb.Models.Model.Blog>
 @{
     ViewBag.Title = "Blog";
@@ -50,9 +50,9 @@
 
                 <div id="pagination">
                     @*3.aşama da en son burası otomatik sayfa listesi yapması için burayı
-                      da hallettim mi kaç sayfa olduğunu göstericek*@ 
+                        da hallettim mi kaç sayfa olduğunu göstericek*@
 
-                    @Html.PagedListPager(Model, Sayfa => Url.Action("Blog", new { Sayfa}),PagedListRenderOptions.Classic)
+                    @Html.PagedListPager(Model, Sayfa => Url.Action("Blog", new { Sayfa }), PagedListRenderOptions.Classic)
                 </div>
             </div>
             <div class="col-lg-4">
