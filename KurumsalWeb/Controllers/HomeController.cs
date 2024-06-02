@@ -22,6 +22,7 @@ namespace KurumsalWeb.Controllers
         [Route("Anasayfa")]
 
         public ActionResult Index()
+        
         {
             //site kimlik entegrasyonu seo uyumluluk çalışmaları
             ViewBag.Kimlik = db.Kimlik.SingleOrDefault();
