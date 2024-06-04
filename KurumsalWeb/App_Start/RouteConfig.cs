@@ -13,6 +13,9 @@ namespace KurumsalWeb
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            //seo url ekleme
+            routes.MapMvcAttributeRoutes();
+
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
