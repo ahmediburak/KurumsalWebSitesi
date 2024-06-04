@@ -76,10 +76,10 @@ namespace KurumsalWeb.Controllers
                 WebMail.SmtpServer = "smtp.gmail.com";
                 //güvenli bağlantı oluşturma işlemi
                 WebMail.EnableSsl = false;
-                WebMail.UserName = "kubrakosee34@gmail.com";
-                WebMail.Password = "160622090kubrak";
+                WebMail.UserName = "ahmedburak@gmail.com";
+                WebMail.Password = "123456";
                 WebMail.SmtpPort = 587;
-                WebMail.Send("kubrakosee34@gmail.com", konu, email + "</br>" + mesaj);
+                WebMail.Send("ahmedburak@gmail.com", konu, email + "</br>" + mesaj);
                 ViewBag.Uyari = "Mesajınız Başarı İle Gönderilmiştir.";
 
             }
